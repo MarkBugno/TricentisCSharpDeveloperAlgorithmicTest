@@ -39,6 +39,6 @@ A solution exists in [the src directory](./src). This solution contains a sample
 3. Performance (speed) of the code
 
 ### Task 2:
-We have written an acceptance criteria with inputs and outputs. You are to write a unit test to validate the results of your code
+Write a unit test using the following data to validate the results of your code.
 
-![](./Images/acceptance.png)
+<img src="./Images/AcceptanceCriteria.png" width="600px" />
