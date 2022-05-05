@@ -9,6 +9,7 @@ Boxes come in CSV files. A file has 5 columns and a single-row header record. Th
 * two integer coordinates (`X` and `Y`), representing the lower x and y bounds of the box;
 * two integer dimensions (`Width` and `Height`), representing the size of the box; and
 * one decimal value (`Quality`), between 0 and 1 inclusive.
+
 Quality is a representation of how important the box is to us. A larger quality value will mean the box is more important (e.g., a box with Quality = 0.8 is more important than a box with Quality = 0.4). There may be an arbitrarily large number of boxes in the file.
 
 An example of a box file would look like this:
