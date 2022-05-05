@@ -25,18 +25,18 @@ The problem exists that some boxes in the file may overlap one another. When two
 
 <img src="./Images/IoU.png" width="600px" />
 
-We also want to discard low quality boxes. Boxes with a quality less than `0.5` should be removed.
+We also want to discard low quality boxes. Boxes with a quality less than `0.5` should be discarded.
 
-## What outcome do we get
-We want a list of all boxes in a file that *do not* get suppressed by the above formula
+## What outcome do we want?
+We want a CSV file containing the list of all boxes neither suppressed nor discarded. We would also like a print out of the number of boxes retained, suppressed, and discarded.
 
 ## What do we want you to do?
 
 ### Task 1:
-A solution exists in [the src directory](./src). This solution contains a sample [box file](./src/BoxCorp/BoxCorp.App/boxes.csv).  Write a program to satisfy the requirements above. You will be judged based on:
+A solution exists in [the src directory](./src). This solution contains a sample [box file](./src/BoxCorp/BoxCorp.App/boxes.csv). Write a program to satisfy the requirements above. You will be judged based on:
 1. Accuracy of the algorithm
 2. Code hygiene
-3. Performance of the code against a benchmark
+3. Performance (speed) of the code
 
 ### Task 2:
 We have written an acceptance criteria with inputs and outputs. You are to write a unit test to validate the results of your code
