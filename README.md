@@ -23,7 +23,7 @@ This would give a box that looks like this:
 
 The problem exists that some boxes in the file may overlap one another. When two boxes significantly overlap each other, we want to retain the higher-quality box. Two boxes are determined to significantly overlap if their intersection over union (IoU) is ≥ 0.4. The formula for calculating IoU is: `IoU = <intersecting area of the boxes> / <union area of the boxes>`
 
-<img src="./Images/jaqard.png" width="600px" />
+<img src="./Images/IoU.png" width="600px" />
 
 If the Intersection over Union (Jaccard Index) is greater than `0.4` (called the Jaccard index threshold), then the box with the lower Rank will be ignored.
 
