@@ -1,4 +1,4 @@
-# BoxCorp Box Choosing Algoritm
+# BoxCorp Box Choosing Algorithm
 ## Our Objective
 We here at BoxCorp are very concerned with boxes. People often send us a file full of boxes, and we are responsible for chosing the best boxes from the file. In order to get only the finest boxes we:
 1. look for overlapping boxes and choose the best one based on a formula;
