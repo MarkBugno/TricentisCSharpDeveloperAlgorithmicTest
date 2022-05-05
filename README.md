@@ -13,7 +13,7 @@ Boxes come in CSV files. A file has 5 columns and a single-row header record. Th
 Quality is a representation of how important the box is to us. A larger quality value will mean the box is more important (e.g., a box with Quality = 0.8 is more important than a box with Quality = 0.4). There may be an arbitrarily large number of boxes in the file.
 
 An example of a box file would look like this:
-| X | Y | Width | Height | Rank |
+| X | Y | Width | Height | Quality |
 |----|----|----|----|----|
 | 2 | 2 | 4 | 3 | 0.6 |
 
