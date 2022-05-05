@@ -21,15 +21,11 @@ This would give a box that looks like this:
 
 <img src="./Images/BoxExample.png" width="600px"/>
 
-The problem exists that some boxes in the file may overlap one another. When two boxes significantly overlap each other, we want to retain the higher-quality box. Two boxes are determined to significantly overlap if their intersection over union (IoU) is ≥ 0.4. The formula for calculating IoU is: `IoU = <intersecting area of the boxes> / <union area of the boxes>`
+The problem exists that some boxes in the file may overlap one another. When two boxes significantly overlap each other, we want to retain the higher-quality box. Two boxes are determined to significantly overlap if their intersection over union (IoU) is `≥ 0.4`. The formula for calculating IoU is: `IoU = <intersecting area of the boxes> / <union area of the boxes>`
 
 <img src="./Images/IoU.png" width="600px" />
 
-If the Intersection over Union (Jaccard Index) is greater than `0.4` (called the Jaccard index threshold), then the box with the lower Rank will be ignored.
-
-In order to make our algorithm faster, we also have a Rank Threshold. Boxes with a Rank lower than `0.5` will be ignored entirely! 
-
-<img src="./Images/poof.gif" width="200px"/>
+We also want to discard low quality boxes. Boxes with a quality less than `0.5` should be removed.
 
 ## What outcome do we get
 We want a list of all boxes in a file that *do not* get suppressed by the above formula
