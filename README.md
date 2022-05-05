@@ -5,12 +5,12 @@ We here at BoxCorp are very concerned with boxes. People often send us a file fu
 2. remove any poor quality boxes based on a formula.
 
 ## How do we choose the best boxes? 
-Boxes come in CSV files. A file has 5 columns and a single-row header record. The columns are:
+Boxes come in CSV files. There may be an arbitrarily large number of boxes in the file. A file has 5 columns and a single-row header record. The columns are:
 * two integer coordinates (`x` and `y`), representing the lower x and y bounds of the box;
 * two integer dimensions (`width` and `height`), representing the size of the box; and
 * one decimal value (`quality`), between 0 and 1 inclusive.
 
-Quality is a representation of how important the box is to us. A larger quality value will mean the box is more important (e.g., a box with quality = 0.8 is more important than a box with quality = 0.4). There may be an arbitrarily large number of boxes in the file.
+Quality is a representation of how important the box is to us. A larger quality value will mean the box is more important (e.g., a box with quality = 0.8 is more important than a box with quality = 0.4). When forced to choose, we want to retain higher quality boxes.
 
 An example of a box file would look like this:
 | x | y | width | height | quality |
