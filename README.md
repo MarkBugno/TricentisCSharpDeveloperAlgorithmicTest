@@ -21,7 +21,7 @@ This would give a box that looks like this:
 
 <img src="./Images/BoxExample.png" width="600px"/>
 
-The problem exists that some boxes in the file may overlap one another. When two boxes significantly overlap each other, we want to retain the higher-quality box. Two boxes are determined to significantly overlap if their intersection over union (IoU) is ≥ 0.4. The formula for calculating IoU is: `IoU = <intersecting area of the boxes> divided by <union area of the boxes>`
+The problem exists that some boxes in the file may overlap one another. When two boxes significantly overlap each other, we want to retain the higher-quality box. Two boxes are determined to significantly overlap if their intersection over union (IoU) is ≥ 0.4. The formula for calculating IoU is: `IoU = <intersecting area of the boxes> / <union area of the boxes>`
 
 <img src="./Images/jaqard.png" width="600px" />
 
