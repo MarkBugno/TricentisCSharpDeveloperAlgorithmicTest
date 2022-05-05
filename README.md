@@ -19,16 +19,9 @@ An example of a box file would look like this:
 
 This would give a box that looks like this:
 
-
 <img src="./Images/BoxExample.png" width="600px"/>
 
-The problem is that some of these boxes overlap.
-We want to minimise the number of boxes by suppressing some of them. 
-Each boxes has a Rank which denotes how important it is. 
-Higher rank values supercede lower values.
-
-In order to determine which rectangles will be suppressed, we will use a technique called the Jaccard Index.
-The formula for the Jaccard index is `(Intersecting area of the rectangles) divided by (Union of the area of the rectangles)`
+The problem exists that some boxes in the file may overlap one another. When two boxes significantly overlap each other, we want to retain the higher-quality box. Two boxes are determined to significantly overlap if their intersection over union (IoU) is ≥ 0.4. The formula for calculating IoU is: `IoU = <intersecting area of the boxes> divided by <union area of the boxes>`
 
 <img src="./Images/jaqard.png" width="600px" />
 
