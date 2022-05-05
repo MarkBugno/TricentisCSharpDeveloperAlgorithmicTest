@@ -7,7 +7,7 @@ We here at BoxCorp are very concerned with boxes. People often send us a file fu
 ## How do we choose the best boxes? 
 Boxes come in CSV files. There may be an arbitrarily large number of boxes in the file. A file has 5 columns and a single-row header record. The columns are:
 * two integer coordinates (`x` and `y`), representing the lower x and y bounds of the box;
-* two integer dimensions (`width` and `height`), representing the size of the box; and
+* two integer dimensions (`width` and `height`), representing the size of the box; and,
 * one decimal value (`quality`), between 0 and 1 inclusive.
 
 Quality is a representation of how important the box is to us. A larger quality value will mean the box is more important (e.g., a box with quality = 0.8 is more important than a box with quality = 0.4). When forced to choose, we want to retain higher quality boxes.
@@ -34,9 +34,9 @@ We want a CSV file containing the list of all boxes neither suppressed nor disca
 
 ### Task 1:
 A solution exists in [the src directory](./src). This solution contains a sample [box file](./src/BoxCorp/BoxCorp.App/boxes.csv). Write a program to satisfy the requirements above. You will be judged based on:
-1. Accuracy of the algorithm
-2. Code hygiene
-3. Performance (speed) of the code
+1. accuracy of the algorithm;
+2. code hygiene; and,
+3. performance (speed) of the code.
 
 ### Task 2:
 Write a unit test using the following data to validate the results of your code.
