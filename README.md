@@ -41,4 +41,4 @@ A solution exists in [the src directory](./src). This solution contains a sample
 ### Task 2:
 Write a unit test using the following data to validate the results of your code.
 
-<img src="./Images/AcceptanceCriteria.png" width="600px" />
+<img src="./Images/AcceptanceCriteria.png" width="900px" />
