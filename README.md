@@ -25,7 +25,7 @@ The problem exists that some boxes in the file may overlap one another. When two
 
 <img src="./Images/IoU.png" width="600px" />
 
-We also want to discard low quality boxes. Boxes with a quality less than `0.5` should be discarded.
+We also want to discard low quality boxes. Boxes with `quality < 0.5` should be discarded.
 
 ## What outcome do we want?
 We want a CSV file containing the list of all boxes neither suppressed nor discarded. We would also like a print out of the number of boxes retained, suppressed, and discarded.
