@@ -33,7 +33,7 @@ We want a CSV file containing the list of all boxes neither suppressed nor disca
 ## What do we want you to do?
 
 ### Task 1:
-A solution exists in [the src directory](./src). This solution contains a sample [box file](./src/BoxCorp/BoxCorp.App/boxes.csv). Write a program to satisfy the requirements above. You will be judged based on:
+A solution exists in [the src directory](./src). This solution contains a sample [box file](./src/boxes.csv). Write a program to satisfy the requirements above. Feel free to replace any/all existing code, but use the box file provided. You will be judged based on:
 1. accuracy of the algorithm;
 2. code hygiene; and,
 3. performance (speed) of the code.
