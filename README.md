@@ -38,7 +38,7 @@ A solution exists in [the src directory](./src). This solution contains a sample
 2. code hygiene; and,
 3. performance (speed) of the code.
 
-There are 10,000 boxes in the file. Approximately 2510 will be retained, 2464 suppressed, and 5026 discarded. The solution should take less than 1 second to run (my solution runs in 28 milliseconds on the potato Tricentis gave me).
+There are `10,000` boxes in the file. Approximately `2510` will be retained, `2464` suppressed, and `5026` discarded. Your numbers might be out by 10 or so. The solution should take less than `1 second` to run (my solution runs in 28 milliseconds on the potato Tricentis gave me).
 
 ### Task 2:
 Write a unit test using the following data to validate the results of your code.
