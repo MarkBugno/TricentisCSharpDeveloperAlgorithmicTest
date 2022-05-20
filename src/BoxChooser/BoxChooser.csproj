@@ -8,13 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="boxes.csv" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="boxes.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <None Update="boxes.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
 ﻿namespace BoxChooser;
 
-// You are welcome to change this class around - I just added it so the CSV Handler would work.
+// You are welcome to change this class around - I just added it so the CSV Handler and the unit tests would work.
 public class Box {
     public Box(int index, int x, int y, int width, int height, double quality) {
         Index = index;

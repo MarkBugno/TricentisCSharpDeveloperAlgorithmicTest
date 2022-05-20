@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoxChooser", "BoxChooser.csproj", "{1C4C2EF9-E94E-406A-8DB8-59C9A75046B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoxChooser", "BoxChooser\BoxChooser.csproj", "{1DB5F401-F941-42E0-A400-1639CBDE5F0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoxChooser.Tests", "BoxChooser.Tests\BoxChooser.Tests.csproj", "{38CD0110-1E54-4E81-92EE-8F4EDF63E67D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1C4C2EF9-E94E-406A-8DB8-59C9A75046B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1C4C2EF9-E94E-406A-8DB8-59C9A75046B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1C4C2EF9-E94E-406A-8DB8-59C9A75046B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1C4C2EF9-E94E-406A-8DB8-59C9A75046B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DB5F401-F941-42E0-A400-1639CBDE5F0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DB5F401-F941-42E0-A400-1639CBDE5F0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DB5F401-F941-42E0-A400-1639CBDE5F0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DB5F401-F941-42E0-A400-1639CBDE5F0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38CD0110-1E54-4E81-92EE-8F4EDF63E67D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38CD0110-1E54-4E81-92EE-8F4EDF63E67D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38CD0110-1E54-4E81-92EE-8F4EDF63E67D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38CD0110-1E54-4E81-92EE-8F4EDF63E67D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
