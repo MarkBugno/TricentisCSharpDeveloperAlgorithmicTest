@@ -27,6 +27,10 @@ The problem exists that some boxes in the file may overlap one another. When two
 
 We also want to discard low quality boxes. Boxes with `quality < 0.5` should be discarded.
 
+As an example of the overall process, if we received a file with the below Input Data, we would expect the program to produce a file with the below Expected Output Data. The green box would be suppressed because it significantly overlapped with the blue box and had lower quality than the blue box. The purple box would be discarded because it was too low in quality. The other two boxes would be kept.
+
+<img src="./Images/AcceptanceCriteria.png" width="900px" />
+
 ## What outcome do we want?
 We want a CSV file containing the list of all retained boxes (all boxes neither suppressed nor discarded). We also want a print out of the number of boxes retained, suppressed, and discarded.
 
