@@ -27,7 +27,7 @@ The problem exists that some boxes in the file may overlap one another. When two
 
 We also want to discard low quality boxes. Boxes with `quality < 0.5` should be discarded.
 
-As an example of the overall process, if we received a file with the below Input Data, we would expect the program to produce a file with the below Expected Output Data. The green box would be suppressed because it significantly overlapped with the blue box and had lower quality than the blue box. The purple box would be discarded because it was too low in quality. The other two boxes would be kept.
+As an example of the overall process, if we received a file with the below Input Data, we would expect the program to produce a file with the below Expected Output Data. The green box would be suppressed because it significantly overlapped with the blue box and had lower quality than the blue box. The purple box would be discarded because it was too low in quality. The other two boxes would be retained.
 
 <img src="./Images/AcceptanceCriteria.png" width="900px" />
 
@@ -37,9 +37,9 @@ We want a CSV file containing the list of all retained boxes (all boxes neither 
 ## What do we want you to do?
 
 ### Task 1:
-A solution exists in [the src directory](./src). This solution contains a sample [box file](./src/BoxChooser/boxes.csv). Write a program to satisfy the requirements above. Feel free to replace any/all existing code, but use the box file provided. You will be judged based on:
-1. accuracy of the algorithm;
-2. code hygiene; and,
-3. performance (speed) of the code.
+A solution exists in [the src directory](./src). This solution contains a sample [box file](./src/BoxChooser/boxes.csv). Write a program to satisfy the requirements above. Feel free to replace any/all existing code. You will be judged based on:
+1. accuracy of the algorithm - it needs to choose the correct boxes;
+2. code hygiene - your code needs to be clean and maintainable; and,
+3. performance (speed) of the code - your code needs to be efficient.
 
-There are `10,000` boxes in the file. Approximately `2510` will be retained, `2464` suppressed, and `5026` discarded. Your numbers might be out by 10 or so. The solution should take less than `1 second` to run (my solution runs in 28 milliseconds on the potato Tricentis gave me).
+There are `10,000` boxes in the file. Approximately `2510` boxes will be retained, `2464` boxes will be suppressed, and `5026` boxes will be discarded. Your numbers might be out by 10 or so. The solution should take less than `1 second` to run (my solution runs in 28 milliseconds on a slow computer).
