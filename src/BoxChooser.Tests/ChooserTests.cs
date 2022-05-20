@@ -1,9 +1,7 @@
-using System.Collections.Generic;
-
 namespace BoxChooser.Tests;
 
 public class ChooserTests {
-    private Chooser chooser;
+    private readonly Chooser chooser;
     public ChooserTests() => chooser = new();
 
     // This test checks that your intersection calculation is correct.
