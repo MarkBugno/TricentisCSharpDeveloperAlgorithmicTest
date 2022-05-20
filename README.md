@@ -5,7 +5,7 @@ We here at BoxCorp are very concerned with boxes. People often send us a file fu
 2. remove any poor quality boxes based on a formula.
 
 ## How do we choose the best boxes? 
-Boxes come in CSV files. [Here's](./src/boxes.csv) the one you'll be working with. There may be an arbitrarily large number of boxes in the file. A file has 5 columns and a single-row header record. Each subsequent row is a box. The columns are:
+Boxes come in CSV files. [Here's](./src/BoxChooser/boxes.csv) the one you'll be working with. There may be an arbitrarily large number of boxes in the file. A file has 5 columns and a single-row header record. Each subsequent row is a box. The columns are:
 * two positive integer coordinates (`x` and `y`), representing the lower x and y bounds of the box;
 * two positive integer dimensions (`width` and `height`), representing the size of the box; and,
 * one decimal value (`quality`), between 0 and 1 inclusive.
@@ -33,14 +33,9 @@ We want a CSV file containing the list of all retained boxes (all boxes neither 
 ## What do we want you to do?
 
 ### Task 1:
-A solution exists in [the src directory](./src). This solution contains a sample [box file](./src/boxes.csv). Write a program to satisfy the requirements above. Feel free to replace any/all existing code, but use the box file provided. You will be judged based on:
+A solution exists in [the src directory](./src). This solution contains a sample [box file](./src/BoxChooser/boxes.csv). Write a program to satisfy the requirements above. Feel free to replace any/all existing code, but use the box file provided. You will be judged based on:
 1. accuracy of the algorithm;
 2. code hygiene; and,
 3. performance (speed) of the code.
 
 There are `10,000` boxes in the file. Approximately `2510` will be retained, `2464` suppressed, and `5026` discarded. Your numbers might be out by 10 or so. The solution should take less than `1 second` to run (my solution runs in 28 milliseconds on the potato Tricentis gave me).
-
-### Task 2:
-Write a unit test using the following data to validate the results of your code.
-
-<img src="./Images/AcceptanceCriteria.png" width="900px" />
