@@ -38,8 +38,8 @@ We want a CSV file containing the list of all retained boxes (all boxes neither 
 
 ### Task 1:
 A solution exists in [the src directory](./src). This solution contains a sample [box file](./src/BoxChooser/boxes.csv). Write a program to satisfy the requirements above. Feel free to replace any/all existing code. You will be judged based on:
-1. accuracy of the algorithm - it needs to choose the correct boxes;
-2. code hygiene - your code needs to be clean and maintainable; and,
-3. performance (speed) of the code - your code needs to be efficient.
+1. Accuracy: your algorithm needs to choose the correct boxes.
+2. Code Hygiene: your code needs to be clean and maintainable.
+3. Performance: your code needs to be efficient/fast.
 
 There are `10,000` boxes in the file. Approximately `2510` boxes will be retained, `2464` boxes will be suppressed, and `5026` boxes will be discarded. Your numbers might be out by 10 or so. The solution should take less than `1 second` to run (my solution runs in 28 milliseconds on a slow computer).
