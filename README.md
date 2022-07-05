@@ -1,6 +1,6 @@
 # Box Corp. Box Choosing Algorithm
 ## Our Objective
-We here at Box Corp. are very concerned with boxes. People often send us files full of box specifications, and we are responsible for chosing the best boxes from each file. In order to get only the finest boxes we:
+We here at Box Corp. are very concerned with boxes (rectangles). People often send us files full of box specifications, and we are responsible for chosing the best boxes from each file. In order to get only the finest boxes we:
 1. remove any poor quality boxes based on a formula;
 2. look for overlapping boxes and choose the best one based on a formula.
 
