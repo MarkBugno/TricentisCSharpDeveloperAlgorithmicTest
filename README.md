@@ -39,7 +39,7 @@ As an example of the overall process, if we received a file with the below data,
 <img src="./Images/AcceptanceCriteria.png" width="600px" />
 
 ## What outcome do we want?
-We want a CSV file containing the list of all retained boxes (all boxes neither discareded nor suppressed). We also want a print out of the number of boxes retained, discarded (due to low quality), and suppressed (due to overlapping significantly).
+We want a CSV file containing the list of all retained boxes (all boxes neither discarded nor suppressed). We also want a print out of the number of boxes retained, discarded (due to low quality), and suppressed (due to overlapping significantly).
 
 ## What do we want you to do?
 A solution exists in [the src directory](./src). This solution contains a sample [box file](./src/BoxChooser/boxes.csv). Write a program to satisfy the requirements above. Feel free to replace any/all existing code. You will be judged based on:
