@@ -11,9 +11,9 @@ timer.Start();
 var result = chooser.ChooseBoxes(boxes);
 timer.Stop();
 
-csvHandler.Save(@$".\KeptBoxes.csv", result.RetainedBoxes);
-Console.WriteLine($"Retained:   {result.BoxesRetained}");
-Console.WriteLine($"Suppressed: {result.BoxesSuppressed}");
-Console.WriteLine($"Discarded:  {result.BoxesDiscarded}");
+csvHandler.Save(@$".\KeptBoxes.csv", result.BoxesRetained);
+Console.WriteLine($"Retained:   {result.BoxesRetainedCount}");
+Console.WriteLine($"Suppressed: {result.BoxesSuppressedCount}");
+Console.WriteLine($"Discarded:  {result.BoxesDiscardedCount}");
 Console.WriteLine($"Time:       {timer.ElapsedMilliseconds} ms");
 Console.ReadLine();

@@ -3,14 +3,14 @@
 namespace BoxChooser;
 
 public class ChosenBoxes {
-    public ChosenBoxes(ImmutableArray<Box> keptBoxes, int boxesDiscarded, int boxesSuppressed) {
-        RetainedBoxes = keptBoxes;
-        BoxesDiscarded = boxesDiscarded;
-        BoxesSuppressed = boxesSuppressed;
+    public ChosenBoxes(ImmutableArray<Box> boxesRetained, int boxesDiscardedCount, int boxesSuppressedCount) {
+        BoxesRetained = boxesRetained;
+        BoxesDiscardedCount = boxesDiscardedCount;
+        BoxesSuppressedCount = boxesSuppressedCount;
     }
 
-    public ImmutableArray<Box> RetainedBoxes { get; }
-    public int BoxesRetained => RetainedBoxes.Length;
-    public int BoxesDiscarded { get; }
-    public int BoxesSuppressed { get; }
+    public ImmutableArray<Box> BoxesRetained { get; }
+    public int BoxesRetainedCount => BoxesRetained.Length;
+    public int BoxesDiscardedCount { get; }
+    public int BoxesSuppressedCount { get; }
 }

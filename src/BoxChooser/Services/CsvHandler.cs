@@ -7,7 +7,6 @@ using System.Text;
 
 namespace BoxChooser;
 
-// Feel free to modify this class.
 public class CsvHandler {
     public ImmutableArray<Box> Load(string filepath) {
         using var parser = new TextFieldParser(filepath);
@@ -26,13 +25,14 @@ public class CsvHandler {
                 var width = int.Parse(fields[2]);
                 var height = int.Parse(fields[3]);
                 var quality = double.Parse(fields[4]);
-                yield return new Box(index++, x, y, width, height, quality);
+                yield return new Box(x, y, width, height, quality, index++);
             }
         }
     }
 
     public void Save(string filepath, ImmutableArray<Box> boxes) {
-        var csv = new StringBuilder("x,y,width,height,quality");
+        var csv = new StringBuilder();
+        _ = csv.AppendLine("x,y,width,height,quality");
         foreach (var box in boxes.OrderBy(b => b.Index))
             _ = csv.AppendLine($"{box.X},{box.Y},{box.Width},{box.Height},{box.Quality}");
         File.WriteAllText(filepath, csv.ToString());

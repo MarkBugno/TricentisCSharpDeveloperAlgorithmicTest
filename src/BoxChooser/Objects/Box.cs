@@ -1,14 +1,19 @@
 ﻿namespace BoxChooser;
 
-// You are welcome to change this class around - I just added it so the CSV Handler and the unit tests would work.
 public class Box {
-    public Box(int index, int x, int y, int width, int height, double quality) {
+    public Box(int x, int y, int width, int height, double quality, int index = 0) {
         Index = index;
         X = x;
         Y = y;
         Width = width;
         Height = height;
         Quality = quality;
+
+        Left = x;
+        Right = x + width;
+        Top = y;
+        Bottom = y + height;
+        Area = width * height;
     }
 
     public int Index { get; }
@@ -17,4 +22,10 @@ public class Box {
     public int Width { get; }
     public int Height { get; }
     public double Quality { get; }
+
+    public int Left { get; }
+    public int Right { get; }
+    public int Top { get; }
+    public int Bottom { get; }
+    public int Area { get; }
 }
