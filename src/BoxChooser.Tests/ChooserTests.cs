@@ -275,58 +275,62 @@ public class ChooserTests {
 
     #region CalculateUnion
 
-    //[Fact]
+    [Fact]
     public void CalculateUnion_NoOverlap_Zero() {
         // Arrange
         var box1 = new Box(2, 10, 5, 5, 1.0);
         var box2 = new Box(10, 10, 5, 5, 1.0);
-        var expectedUnion = 0;
+        var intersection = chooser.CalculateIntersection(box1, box2);
+        var expectedUnion = 50;
 
         // Act
-        var actualUnion = chooser.CalculateUnion(/*...*/); // TODO
+        var actualUnion = chooser.CalculateUnion(box1, box2, intersection);
 
         // Assert
         Assert.Equal(expectedUnion, actualUnion);
     }
 
-    //[Fact]
+    [Fact]
     public void CalculateUnion_Touches_Zero() {
         // Arrange
         var box1 = new Box(5, 10, 5, 5, 1.0);
         var box2 = new Box(10, 10, 5, 5, 1.0);
-        var expectedUnion = 0;
+        var intersection = chooser.CalculateIntersection(box1, box2);
+        var expectedUnion = 50;
 
         // Act
-        var actualUnion = chooser.CalculateUnion(/*...*/); // TODO
+        var actualUnion = chooser.CalculateUnion(box1, box2, intersection);
 
         // Assert
         Assert.Equal(expectedUnion, actualUnion);
     }
 
-    //[Fact]
+    [Fact]
     public void CalculateUnion_Overlaps_NonZero() {
         // Arrange
         var box1 = new Box(2, 2, 6, 6, 1.0);
         var box2 = new Box(6, 4, 6, 6, 1.0);
+        var intersection = chooser.CalculateIntersection(box1, box2);
         var expectedUnion = 64;
 
         // Act
-        var actualUnion = chooser.CalculateUnion(/*...*/); // TODO
+        var actualUnion = chooser.CalculateUnion(box1, box2, intersection);
 
         // Assert
         Assert.Equal(expectedUnion, actualUnion);
     }
 
 
-    //[Fact]
+    [Fact]
     public void CalculateUnion_Contains_NonZero() {
         // Arrange
         var box1 = new Box(2, 2, 4, 4, 1.0);
         var box2 = new Box(2, 2, 5, 5, 1.0);
+        var intersection = chooser.CalculateIntersection(box1, box2);
         var expectedUnion = 25;
 
         // Act
-        var actualUnion = chooser.CalculateUnion(/*...*/); // TODO
+        var actualUnion = chooser.CalculateUnion(box1, box2, intersection);
 
         // Assert
         Assert.Equal(expectedUnion, actualUnion);
@@ -401,8 +405,8 @@ public class ChooserTests {
     public void ChooseBoxes_Sample_ChoosesCorrectBoxes() {
         // Arrange
         var boxes = new Box[] {
-            new(5, 4, 5, 4, 0.5, 1),
-            new(4, 3, 5, 4, 0.6, 0),
+            new(5, 4, 5, 4, 0.5, 0),
+            new(4, 3, 5, 4, 0.6, 1),
             new(2, 2, 6, 5, 0.8, 2),
             new(2, 8, 4, 3, 0.9, 3),
             new(8, 9, 2, 2, 0.3, 4)
