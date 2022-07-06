@@ -1,5 +1,3 @@
-using System.Linq;
-
 namespace BoxChooser.Tests;
 
 public class ChooserTests {
@@ -403,13 +401,13 @@ public class ChooserTests {
     public void ChooseBoxes_Sample_ChoosesCorrectBoxes() {
         // Arrange
         var boxes = new Box[] {
-            new(4, 3, 5, 4, 0.6, 0),
             new(5, 4, 5, 4, 0.5, 1),
+            new(4, 3, 5, 4, 0.6, 0),
             new(2, 2, 6, 5, 0.8, 2),
             new(2, 8, 4, 3, 0.9, 3),
             new(8, 9, 2, 2, 0.3, 4)
         }.ToImmutableArray();
-        var expectedBoxesRetainedIndices = new[] { 1, 2, 3 };
+        var expectedBoxesRetainedIndices = new[] { 0, 2, 3 };
         var expectedBoxesDiscardedCount = 1;
         var expectedBoxesSuppressedCount = 1;
 
@@ -468,16 +466,14 @@ public class ChooserTests {
 
     #endregion
 
-    #region Load
+    #region Other
 
     [Fact]
-    public void Load_AllData_CorrectNumberOfBoxesLoaded() {
+    public void NoOp_AllData_CorrectNumberOfBoxesLoaded() {
         // Arrange
         var csvHandler = new CsvHandler();
-        var expectedBoxesLoadedCount = 10000;
-
-        // Act
         var boxes = csvHandler.Load(@".\boxes.csv");
+        var expectedBoxesLoadedCount = 10000;
 
         // Assert
         Assert.Equal(expectedBoxesLoadedCount, boxes.Length);
