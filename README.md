@@ -32,7 +32,7 @@ As an example of the overall process, if we received a file with the below data,
 * Box D (yellow) is retained, because it doesn't overlap any other box.
 * Box C (blue) is retained, because the only box it significantly overlaps is Box B (green), and it has a higher quality than Box B.
 * Box B (green) is suppressed because it significantly overlaps Box C (blue) and has lower quality than Box C.
-* Box A (red) is retained because the only box it significantly overlaps is Box B (green), and Box B has already been eliminated by Box C (blue).
+* Box A (red) is retained because the only box it significantly overlaps is Box B (green), and Box B has already been suppressed by Box C (blue).
 
 <img src="./Images/AcceptanceCriteria.png" width="600px" />
 
