@@ -29,10 +29,10 @@ Next, we need to check whether any of the boxes significantly overlap other boxe
 
 As an example of the overall process, if we received a file with the below data, we would expect each box to be treated as shown.
 * Box E (purple) is discarded as it's quality is too low.
+* Box D (yellow) is retained, because it doesn't overlap any other box.
 * Box C (blue) is retained, because the only box it significantly overlaps is Box B (green), and it has a higher quality than Box B.
 * Box B (green) is suppressed because it significantly overlaps Box C (blue) and has lower quality than Box C.
 * Box A (red) is retained because the only box it significantly overlaps is Box B (green), and Box B has already been eliminated by Box C (blue).
-* Box D (yellow) is retained, because it doesn't overlap any other box.
 
 <img src="./Images/AcceptanceCriteria.png" width="600px" />
 
